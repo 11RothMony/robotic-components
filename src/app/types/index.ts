@@ -5,7 +5,7 @@ export interface Lesson {
   title: string;
   thumbnail: string;
   category: string;
-  data?: ComponentData[];
+  data?: ComponentData[] | any;
 }
 // export interface ComponentSection {
 //   title: string;
@@ -18,10 +18,11 @@ export interface ComponentData {
   cover?: string;
   title_cover?: string;
   title: string;
-  text: string;
+  text?: string;
   video?: string;
   img?: string;
   link?: string[];
+  url?: string;
 }
 
 export interface ComponentProps {

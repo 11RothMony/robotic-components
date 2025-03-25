@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import {
   Collapsible,
   CollapsibleContent,
@@ -8,9 +7,8 @@ import {
 import { ChevronDown, ChevronUp } from "lucide-react";
 import * as React from "react";
 import { ComponentProps } from "../../app/types";
-// import  ComponentData  from "../../app/types";
 
-const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
+const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
   const [openSections, setOpenSections] = React.useState<{
     [key: number]: boolean;
   }>({});
@@ -23,16 +21,16 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
   };
   const cover = data.find((item) => item.title_cover);
   const otherSections = data.filter(
-    (item) => !item.title_cover && item.title.toLowerCase()
+    (item) => !item.title_cover && item?.title.toLowerCase()
   );
 
   return (
-    <Card className=" w-[100%] mx-auto border-none shadow-none">
+    <div className=" w-[100%] mx-auto border-none shadow-none">
       {/* Card Header with Cover Title */}
       {cover && (
-        <div className="py-4">
-          <div className="text-lg flex flex-col justify-center items-center font-semibold text-gray-800">
-            <div className="w-28 h-28 border bg-gray-100 rounded-md overflow-hidden">
+        <div className="py-4 h-[200px]">
+          <div className="text-lg mt-8 flex flex-col justify-center items-center font-semibold text-gray-800">
+            <div className="w-28 h-28 border bg-gray-100 rounded-md">
               <img
                 src={cover.cover}
                 alt={cover.title}
@@ -43,7 +41,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
           </div>
         </div>
       )}
-      <div className=" w-full pr-4 border-none overflow-y-auto h-[420px] rounded-md border">
+      <div className="max-w-screen p-2 max-h-[calc(100vh-200px)] overflow-y-auto border-none rounded-md border">
         {/* Collapsible Sections */}
         <div className="space-y-2">
           {otherSections.map((section, index) => (
@@ -94,18 +92,40 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
                   </div>
                 )}
                 {section.link && section.link.length > 0 && (
-                  <div className="mt-2">
-                    {section.link.map((url, linkIndex) => (
-                      <a
-                        key={linkIndex}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline block text-sm"
-                      >
-                        Link {linkIndex + 1}
-                      </a>
-                    ))}
+                  <div className="mt-5 flex flex-col gap-4">
+                    {section.link.map((url, linkIndex) => {
+                      // Function to extract YouTube video ID from URL
+                      const getYouTubeID = (url: string): string | null => {
+                        const regex =
+                          /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+                        const match = url.match(regex);
+                        return match ? match[1] : null;
+                      };
+
+                      const videoID = getYouTubeID(url);
+                      const thumbnailUrl = videoID
+                        ? `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`
+                        : null;
+
+                      return (
+                        <a
+                          key={linkIndex}
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:underline text-sm flex items-center"
+                        >
+                          {thumbnailUrl && (
+                            <img
+                              src={thumbnailUrl}
+                              alt={`Thumbnail for Link ${linkIndex + 1}`}
+                              className="w-16 h-12 mr-2 object-cover"
+                            />
+                          )}
+                          link to youtube
+                        </a>
+                      );
+                    })}
                   </div>
                 )}
               </CollapsibleContent>
@@ -113,7 +133,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
           ))}
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 
