@@ -85,15 +85,15 @@ export default function LessonPage() {
         </div>
       </div>
       <main className="w-full mx-auto">
-        <div className="flex gap-16 mb-8">
+        <div className="flex gap-5 mb-8">
           <div className="relative flex-1">
             <Search
               size={16}
               className="absolute right-5 top-1/2 transform -translate-y-1/2 text-muted-foreground"
             />
             <Input
-              placeholder="Search courses..."
-              className="rounded-full pl-5"
+              placeholder="Search..."
+              className="rounded-full pl-5 focus-visible:outline-blue-500 "
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -152,7 +152,7 @@ export default function LessonPage() {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <div className="flex justify-center p-2">
+              <div className=" text-center p-2">
                 <h3 className="text-md font-semibold">{lesson.title}</h3>
               </div>
             </div>

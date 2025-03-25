@@ -68,7 +68,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
                   )}
                 </Button>
               </CollapsibleTrigger>
-              <CollapsibleContent className="p-5">
+              <CollapsibleContent className="p-2">
                 <p className="text-sm text-left text-gray-700">
                   {section.text}
                 </p>

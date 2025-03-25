@@ -602,45 +602,44 @@
         }
       ]
     },
-
     {
-      "id": "55",
-      "title": "breadboard",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyUbFp3FpRmtN5v_6TUjOQmR-NWzBD5Z92Q&s",
-      "category": "Arduino",
+      "id": "14",
+      "title": "Force Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorForce.png",
+      "category": "Components",
       "data": [
         {
-          "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyUbFp3FpRmtN5v_6TUjOQmR-NWzBD5Z92Q&s",
-          "title_cover": "breadboard"
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorForce.png",
+          "title_cover": "Force Sensor"
         },
         {
           "title": "description",
-          "text": " breadboard is a tool used for prototyping electronic circuits without soldering.",
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyUbFp3FpRmtN5v_6TUjOQmR-NWzBD5Z92Q&s"
+          "text": "This device is a variable resistor that reacts to pressing.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorForceid/component.png"
         },
         {
           "title": "how it work",
-          "text": "A breadboard has holes arranged in a grid pattern. Inside, metal strips connect the holes in rows or columns, allowing components to share electrical connections. Power rails run along the sides for supplying voltage and ground.",
+          "text": "The semi-conductive material inside this sensor becomes more conductive when it is squeezed together.",
           "img": ""
         },
         {
           "title": "Connect it",
-          "text": "Insert components (resistors, LEDs, ICs, etc.) into the holes.",
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEfqcxOUcTkShKEI2KAZiN-PbwJKMrbmcew&s"
+          "text": "The semi-conductive material inside this sensor becomes more conductive when it is squeezed together.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorForceid/signal.png"
         },
         {
           "title": "How it is used",
-          "text": "Prototyping circuits before soldering.Testing and debugging electronic components.Learning and experimenting with circuit design.",
-          "img": ""
+          "text": "Select the device during simulation and to display a slider representing pressing force. Drag the slider up and down to change the amount of force.",
+          "video": "https://editor.tinkercad.com/components/detail/sensorForceid/howToUseIt.mp4"
         },
         {
           "title": "Get started",
-          "text": "Get a breadboard, jumper wires, and electronic components.Connect a power source (e.g., 9V battery or USB power supply).Follow circuit diagrams to place components.",
-          "img": ""
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoForceSensor.png"
         },
         {
           "title": "More information",
-          "text": "Breadboards come in different sizes (e.g., full-size, half-size, mini).Works best with low-voltage DC circuits.Can be used with microcontrollers like Arduino and Raspberry Pi.",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
           "link": [
             "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
             "https://www.youtube.com/watch?v=yF7ADcRt_uA"
@@ -649,47 +648,596 @@
       ]
     },
     {
-      "id": "56",
-      "title": "BBC micro:bit",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ6DtAYlCGTm1s41uhElKpkHkHLJtQC-Tl4g&s",
-      "category": "Micro:Bit",
+      "id": "15",
+      "title": "IR sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorInfrared.png",
+      "category": "Components",
       "data": [
         {
-          "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ6DtAYlCGTm1s41uhElKpkHkHLJtQC-Tl4g&s",
-          "title_cover": "Micro:Bit"
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorInfrared.png",
+          "title_cover": "IR sensor"
         },
         {
           "title": "description",
-          "text": " The BBC micro:bit is a small, programmable microcontroller designed for learning coding and electronics. It features sensors, LEDs, and input/output pins for various projects.",
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ6DtAYlCGTm1s41uhElKpkHkHLJtQC-Tl4g&s"
+          "text": "This device detects patterns of infrared light created by a remote control or wireless communication.",
+          "img": "https://editor.tinkercad.com/components/detail/45398/component.png"
         },
         {
           "title": "how it work",
-          "text": "The micro:bit has a 5x5 LED matrix, buttons, a temperature sensor, an accelerometer, and a Bluetooth module. It runs programs written in languages like MakeCode, Python, or JavaScript and can interact with external devices using its input/output (I/O) pins.",
+          "text": "Used with an IR remote, an IR sensor detects patterns of light for wireless communication.",
           "img": ""
         },
         {
           "title": "Connect it",
-          "text": "Use a USB cable to connect it to a computer for programming Attach external components (LEDs, motors, sensors) via the edge connector pins or alligator clips",
-          "img": "https://osoyoo.com/picture/Micro_bit_STEM/A_twinkling_star/connect1.png"
+          "text": "This device has three wire leads, and is often connected to the digital input of a microcontroller. Power the device by connecting the Power pin to the 5V and GND to ground. The Out pin is connected to a digital input on an Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/45398/signal.png"
         },
         {
           "title": "How it is used",
-          "text": "Games & Interactive Projects: Creating animations, step counters, and music, IoT (Internet of Things): Sending and receiving data via Bluetooth or radio signals.",
-          "img": ""
+          "text": "Select the device to edit its name. It will receive the signal from any IR Remote in your circuit.",
+          "video": "https://editor.tinkercad.com/components/detail/45398/howToUseIt.mp4"
         },
         {
           "title": "Get started",
-          "text": "Choose a coding platform (MakeCode, Python, or JavaScript), Write a simple program (e.g., display a heart on the LED matrix), Download the code and transfer it to the micro:bit via USB.",
-          "img": ""
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png"
         },
         {
           "title": "More information",
-          "text": "Works with external sensors and motors via the I/O pins, Can communicate with other micro:bits using radio signals.",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
           "link": [
             "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
             "https://www.youtube.com/watch?v=yF7ADcRt_uA"
           ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Ultrasonic Distance Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance.png",
+          "title_cover": "Ultrasonic Distance Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This sensor uses sound waves to determine how far away an object is from it.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device emits sound with a very high pitch. So high, in fact that you cannot hear it. Sound takes time to travel through the air. This clever device listens for the first echo to bounce off a nearby object. It then figures out how far away the object is by measuring the time it takes for the sound to reflect off the target and echo back to it.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/howItWorks.gif"
+        },
+        {
+          "title": "Connect it",
+          "text": "There are three pins on the bottom of this device. Power the device by connecting the Power pin to the Arduino 5V terminal and Ground to any GND terminal on an Arduino. The Signal pin is connected to any digital or analog terminal on the Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect a large object. The circle is the target object. Select the target to move it around the region and change the distance between it and the sensor.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/howToUseIt.gif"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoUltrasonicRangeFinder.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": [
+            "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
+            "https://www.youtube.com/watch?v=yF7ADcRt_uA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Ultrasonic Distance Sensor (4-pin)",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance4Pin.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance4Pin.png",
+          "title_cover": "Ultrasonic Distance Sensor (4-pin)"
+        },
+        {
+          "title": "description",
+          "text": "This sensor uses sound waves to determine how far away an object is from it.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "This device emits sound with a very high pitch. So high, in fact that you cannot hear it. Sound takes time to travel through the air. This clever device listens for the first echo to bounce off a nearby object. It then figures out how far away the object is by measuring the time it takes for the sound to reflect off the target and echo back to it.",
+          "img": "https://editor.tinkercad.com/components/detail/50341/howItWorks.gif"
+        },
+        {
+          "title": "Connect it",
+          "text": "There are four pins on the bottom of this device. Power the device by connecting the Power pin to the Arduino 5V terminal and Ground to any GND terminal on an Arduino. The Trigger and Echo pins are connected to any digital or analog terminals on the Arduino. The code tells the sensor to emit its sound using the trigger pin, and waits for the echo detection from the echo pin. It converts the time it took it to a number representing the distance in inches or centimeters.",
+          "img": "https://editor.tinkercad.com/components/detail/50341/echo.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect a large object. The circle is the target object. Select the target to move it around the region and change the distance between it and the sensor.",
+          "video": "https://editor.tinkercad.com/components/detail/50341/howToUseIt.mp4"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": [
+            "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
+            "https://www.youtube.com/watch?v=yF7ADcRt_uA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "PIR Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorPassiveInfrared.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorPassiveInfrared.png",
+          "title_cover": "PIR Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device detects changes in infrared light levels over a wide area, such as movement in a room.",
+          "img": "https://editor.tinkercad.com/components/detail/52579/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "Passive Infrared (PIR) sensors detect heat energy by comparing the signals from a pair of pyroelectric elements. The supporting circuitry then sends a HIGH signal to its signal wire.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "There are three pins at the bottom of the device. Power the device by connecting the Power pin to the 5V and Ground to ground. The Signal pin is connected to a device directly, or any digital or analog terminal on an Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/52579/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect movement. The circle is the target object. Select the target to move it around the region and activate the sensor.",
+          "video": "https://editor.tinkercad.com/components/detail/52579/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicPIRSensor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": [
+            "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
+            "https://www.youtube.com/watch?v=yF7ADcRt_uA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Soil Moisture Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorSoilMoisture.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorSoilMoisture.png",
+          "title_cover": "Soil Moisture Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device detects the amount of moisture present in soil.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "This soil moisture sensor measures the resistance between the two probes stuck into soil, which will decrease when more moisture is present.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has three connection pads labeled VCC, GND, and SIG. Power the device by connecting the VCC pin to the Arduino 5V terminal (or any analog or digital terminal set to HIGH) and Ground (GND) to any GND terminal on an Arduino. The Signal pin is connected to any analog input on the Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorSoilMoistureid/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Click the device during simulation to highlight it, then click and drag the wiper to change the simulated resistance.",
+          "video": "https://editor.tinkercad.com/components/detail/sensorSoilMoistureid/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoMoisture.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": [
+            "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
+            "https://www.youtube.com/watch?v=yF7ADcRt_uA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "LED Light Up",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDLightUp.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDLightUp.png",
+          "title_cover": "LED Light Up"
+        },
+        {
+          "title": "description",
+          "text": "Light up an LED with just a battery and a resistor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "LED Dimmer",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDDimmer.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDDimmer.png",
+          "title_cover": "LED Dimmer"
+        },
+        {
+          "title": "description",
+          "text": "Fade your LED on and off with a battery and a potentiometer.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "LED Switch",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDSwitch.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDSwitch.png",
+          "title_cover": "LED Switch"
+        },
+        {
+          "title": "description",
+          "text": "Turn your LED on and off with a simple switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Multiple LEDs",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicMultipleLEDs.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicMultipleLEDs.png",
+          "title_cover": "Multiple LEDs"
+        },
+        {
+          "title": "description",
+          "text": "Light up multiple LEDs by connecting them in parallel.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "RGB LED",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicRGBLED.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicRGBLED.png",
+          "title_cover": "RGB LED"
+        },
+        {
+          "title": "description",
+          "text": "Mix colors with an RGB LED.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "DC Motor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicDCMotor.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicDCMotor.png",
+          "title_cover": "DC Motor"
+        },
+        {
+          "title": "description",
+          "text": "Control a DC motor with light using a photoresistor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Temperature Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicTemperatureSensor.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicTemperatureSensor.png",
+          "title_cover": "Temperature Sensor"
+        },
+        {
+          "title": "description",
+          "text": "Measure ambient temperature using a temperature sensor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "NPN transistor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicNPN.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicNPN.png",
+          "title_cover": "NPN transistor"
+        },
+        {
+          "title": "description",
+          "text": "Use a transistor as a switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Breadboard",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoBreadboard.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoBreadboard.png",
+          "title_cover": "Breadboard"
+        },
+        {
+          "title": "description",
+          "text": "UArduino and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Button",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoButton.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoButton.png",
+          "title_cover": "Button"
+        },
+        {
+          "title": "description",
+          "text": "Detect input using a button.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Debounce",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoDebounce.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoDebounce.png",
+          "title_cover": "Debounce"
+        },
+        {
+          "title": "description",
+          "text": "Debounce an input like a button press to more accurately detect a state change.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Infrared Receiver",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png",
+          "title_cover": "Infrared Receiver"
+        },
+        {
+          "title": "description",
+          "text": "Receive and decode infrared remote signals.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Voltage Meter",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoVoltageMeter.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoVoltageMeter.png",
+          "title_cover": "Voltage Meter"
+        },
+        {
+          "title": "description",
+          "text": "Measure a voltage and display it on an LED display.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Input Serial Pullup",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInternalSerialPullup.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInternalSerialPullup.png",
+          "title_cover": "Input Serial Pullup"
+        },
+        {
+          "title": "description",
+          "text": "Use an internal resistor on an input pin and print the results to the serial monitor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Breadboard",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreadboard.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreadboard.png",
+          "title_cover": "Breadboard"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Alarm",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAlarm.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAlarm.png",
+          "title_cover": "Alarm"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit, PIR sensor, and piezo buzzer alarm.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Analog",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAnalog.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAnalog.png",
+          "title_cover": "Analog"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit analog input/output example.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "title": "micro:bit breakout",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreakout.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreakout.png",
+          "title_cover": "micro:bit breakout"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Servo",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitServo.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitServo.png",
+          "title_cover": "Servo"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit thermometer using a servo motor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "title": "Glow Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyGlow.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyGlow.png",
+          "title_cover": "Glow Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Create a simple glowing design with an LED and battery.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Move Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyMove.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyMove.png",
+          "title_cover": "Move Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Build a design that moves with a vibration motor and switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "title": "Spin Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblySpin.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblySpin.png",
+          "title_cover": "Spin Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Create a spinning design with a hobby gearmotor and battery box.",
+          "img": ""
         }
       ]
     }
