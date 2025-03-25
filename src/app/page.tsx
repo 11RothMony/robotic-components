@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Grid, List, Search } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const categories = [
   "ALL",
@@ -19,8 +20,6 @@ const categories = [
   "Micro:Bit",
   "Circuit Assemblies",
 ];
-
-import Image from "next/image";
 import { lessons } from "../../db.json";
 
 export default function LessonPage() {
@@ -113,7 +112,7 @@ export default function LessonPage() {
               className={`group cursor-pointer bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow  ${
                 viewMode === "grid"
                   ? " flex-col items-center"
-                  : "flex items-center"
+                  : "flex items-center gap-2 p-2"
               }`}
               onClick={() => setSelectedLesson(lesson.data || null)} // Pass the array or null
             >

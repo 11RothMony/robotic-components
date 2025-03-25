@@ -5,6 +5,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Image from "next/image";
 import * as React from "react";
 import { ComponentProps } from "../../app/types";
 
@@ -31,9 +32,12 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
         <div className="py-4 h-[200px]">
           <div className="text-lg mt-8 flex flex-col justify-center items-center font-semibold text-gray-800">
             <div className="w-28 h-28 border bg-gray-100 rounded-md">
-              <img
-                src={cover.cover}
-                alt={cover.title}
+              <Image
+                width={1000}
+                height={1000}
+                src={cover.cover || ""}
+                // src={cover.cover}
+                alt={cover.title || ""}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -56,7 +60,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                   variant="ghost"
                   className="flex justify-between w-full text-left "
                 >
-                  <span className="text-sm font-medium text-gray-600 capitalize">
+                  <span className="text-sm font-bold text-gray-600 capitalize">
                     {section.title}
                   </span>
                   {openSections[index] ? (
@@ -67,7 +71,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                 </Button>
               </CollapsibleTrigger>
               <CollapsibleContent className="p-2">
-                <p className="text-sm text-left text-gray-700">
+                <p className="text-sm font-normal text-left text-gray-700">
                   {section.text}
                 </p>
                 {section.img && (
@@ -94,7 +98,6 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                 {section.link && section.link.length > 0 && (
                   <div className="mt-5 flex flex-col gap-4">
                     {section.link.map((url, linkIndex) => {
-                      // Function to extract YouTube video ID from URL
                       const getYouTubeID = (url: string): string | null => {
                         const regex =
                           /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
@@ -113,16 +116,18 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline text-sm flex items-center"
+                          className="text-blue-600 hover:underline text-sm flex items-center space-x-2"
                         >
                           {thumbnailUrl && (
                             <img
                               src={thumbnailUrl}
                               alt={`Thumbnail for Link ${linkIndex + 1}`}
-                              className="w-16 h-12 mr-2 object-cover"
+                              className="w-16 h-12 object-cover rounded"
                             />
                           )}
-                          link to youtube
+                          <span className="line-clamp-2 break-all overflow-hidden text-ellipsis text-xs leading-tight">
+                            {thumbnailUrl}
+                          </span>
                         </a>
                       );
                     })}
