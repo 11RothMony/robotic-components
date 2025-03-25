@@ -110,21 +110,29 @@ export default function LessonPage() {
           {filteredLessons.map((lesson) => (
             <div
               key={lesson.id}
-              className="group cursor-pointer bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              className={`group cursor-pointer bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow  ${
+                viewMode === "grid"
+                  ? " flex-col items-center"
+                  : "flex items-center"
+              }`}
               onClick={() => setSelectedLesson(lesson.data || null)} // Pass the array or null
             >
-              <div className="p-2 m-auto items-center h-32 w-32">
-                <Image
-                  width={480}
-                  height={200}
-                  src={lesson?.thumbnail}
-                  alt={lesson?.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="text-center p-2">
-                <h3 className="text-md font-semibold">{lesson.title}</h3>
-              </div>
+              <Image
+                width={viewMode === "list" ? 48 : 160}
+                height={viewMode === "list" ? 48 : 160}
+                src={lesson?.thumbnail}
+                alt={lesson?.title}
+                className={`object-contain ${
+                  viewMode === "grid" ? "m-auto" : ""
+                }`}
+              />
+              <h3
+                className={`text-md font-semibold text-center ${
+                  viewMode === "grid" ? "py-2" : ""
+                }`}
+              >
+                {lesson.title}
+              </h3>
             </div>
           ))}
         </div>
