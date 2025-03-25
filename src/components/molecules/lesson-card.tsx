@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -19,7 +18,7 @@ export default function LessonCard({ lesson }: { lesson: Lesson }) {
     <Card className="hover:shadow-lg border-gray-200 transition-shadow">
       <CardHeader>
         <CardTitle>{lesson.title}</CardTitle>
-        <CardDescription>{lesson.description}</CardDescription>
+        {/* <CardDescription>{lesson?.description}</CardDescription> */}
       </CardHeader>
       <CardContent>
         <Button

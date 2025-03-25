@@ -10,7 +10,7 @@ import * as React from "react";
 import { ComponentProps } from "../../app/types";
 // import  ComponentData  from "../../app/types";
 
-const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
+const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
   const [openSections, setOpenSections] = React.useState<{
     [key: number]: boolean;
   }>({});
@@ -23,7 +23,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }) => {
   };
   const cover = data.find((item) => item.title_cover);
   const otherSections = data.filter(
-    (item) => !item.title_cover && item.title.toLowerCase()
+    (item) => !item.title_cover && item?.title.toLowerCase()
   );
 
   return (
