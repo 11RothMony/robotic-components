@@ -21,8 +21,12 @@ export interface ComponentData {
   text?: string;
   video?: string;
   img?: string;
-  link?: string[];
+  link?: LinkItem[];
   url?: string;
+}
+export interface LinkItem {
+  url: string;
+  titleyoutube?: string;
 }
 
 export interface ComponentProps {

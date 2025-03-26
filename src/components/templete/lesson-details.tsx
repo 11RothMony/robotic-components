@@ -76,7 +76,9 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                 </p>
                 {section.img && (
                   <div className="w-full h-full m-auto bg-gray-100 rounded-md overflow-hidden mt-2">
-                    <img
+                    <Image
+                      width={1000}
+                      height={1000}
                       src={section.img}
                       alt={section.title}
                       className="w-full h-full object-cover"
@@ -97,7 +99,7 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                 )}
                 {section.link && section.link.length > 0 && (
                   <div className="mt-5 flex flex-col gap-4">
-                    {section.link.map((url, linkIndex) => {
+                    {section.link.map((item) => {
                       const getYouTubeID = (url: string): string | null => {
                         const regex =
                           /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
@@ -105,29 +107,32 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
                         return match ? match[1] : null;
                       };
 
-                      const videoID = getYouTubeID(url);
+                      const videoID = getYouTubeID(item?.url);
                       const thumbnailUrl = videoID
                         ? `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`
                         : null;
 
                       return (
                         <a
-                          key={linkIndex}
-                          href={url}
+                          key={item.titleyoutube}
+                          href={item?.url || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline text-sm flex items-center space-x-2"
+                          title={item?.titleyoutube || "title"}
+                          className="text-blue-600 items-center hover:underline w-full max-w-full text-sm flex space-x-3"
                         >
                           {thumbnailUrl && (
-                            <img
+                            <Image
+                              width={1000}
+                              height={1000}
                               src={thumbnailUrl}
-                              alt={`Thumbnail for Link ${linkIndex + 1}`}
+                              alt={`Thumbnail for Link`}
                               className="w-16 h-12 object-cover rounded"
                             />
                           )}
-                          <span className="line-clamp-2 break-all overflow-hidden text-ellipsis text-xs leading-tight">
-                            {thumbnailUrl}
-                          </span>
+                          <p className="truncate">
+                            {item?.titleyoutube || "title"}
+                          </p>
                         </a>
                       );
                     })}
