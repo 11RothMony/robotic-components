@@ -27,25 +27,26 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
 
   return (
     <div className=" w-[100%] mx-auto border-none shadow-none">
-      {/* Card Header with Cover Title */}
       {cover && (
-        <div className="py-4 h-[200px]">
-          <div className="text-lg mt-8 flex flex-col justify-center items-center font-semibold text-gray-800">
-            <div className="w-28 h-28 border bg-gray-100 rounded-md">
-              <Image
-                width={1000}
-                height={1000}
-                src={cover.cover || ""}
-                // src={cover.cover}
-                alt={cover.title || ""}
-                className="w-full h-full object-cover"
-              />
+        <div className=" h-[260px]">
+          <div className="text-lg flex flex-col gap-2 justify-center items-center      font-semibold text-gray-800">
+            <div className="mt-12 text-center text-lg font-bold flex flex-col gap-1">
+              <div className="w-[160px] h-[168px] border bg-gray-100 rounded-md">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={cover.cover || ""}
+                  // src={cover.cover}
+                  alt={cover.title || ""}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {cover.title_cover}
             </div>
-            {cover.title_cover}
           </div>
         </div>
       )}
-      <div className="max-w-screen p-2 max-h-[calc(100vh-200px)] overflow-y-auto border-none rounded-md border">
+      <div className="max-w-screen p-2 max-h-[calc(100vh-260px)] overflow-y-auto border-none rounded-md border">
         {/* Collapsible Sections */}
         <div className="space-y-2">
           {otherSections.map((section, index) => (
@@ -53,25 +54,25 @@ const ComponentCard: React.FC<ComponentProps> = ({ data }: ComponentProps) => {
               key={index}
               open={openSections[index] || false}
               onOpenChange={() => toggleSection(index)}
-              className="border rounded-md px-2 bg-gray-50"
+              className="border rounded-md px-3 py-3 bg-gray-50"
             >
               <CollapsibleTrigger asChild>
                 <Button
                   variant="ghost"
                   className="flex justify-between w-full text-left "
                 >
-                  <span className="text-sm font-bold text-gray-600 capitalize">
+                  <span className="text-lg font-bold text-gray-600 capitalize">
                     {section.title}
                   </span>
                   {openSections[index] ? (
-                    <ChevronUp className="h-4 w-4 text-gray-500" />
+                    <ChevronUp className="h-5 w-5 text-gray-500" />
                   ) : (
-                    <ChevronDown className="h-4 w-4 text-gray-500" />
+                    <ChevronDown className="h-5 w-5 text-gray-500" />
                   )}
                 </Button>
               </CollapsibleTrigger>
               <CollapsibleContent className="p-2">
-                <p className="text-sm font-normal text-left text-gray-700">
+                <p className="text-md font-normal text-left text-gray-700">
                   {section.text}
                 </p>
                 {section.img && (

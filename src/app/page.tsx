@@ -9,8 +9,9 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Grid, List, Search } from "lucide-react";
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
+import { lessons } from "../../db.json";
 
 const categories = [
   "ALL",
@@ -20,7 +21,6 @@ const categories = [
   "Micro:Bit",
   "Circuit Assemblies",
 ];
-import { lessons } from "../../db.json";
 
 export default function LessonPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -46,10 +46,8 @@ export default function LessonPage() {
 
   return (
     <div className="min-h-screen px-2 mx-auto bg-[#EAEBF3]">
-      <div className="w-full h-auto  flex justify-between bg-[#EAEBF3] items-center py-5">
-        <div className=" w-full h-full">
-          <ImageSlider />
-        </div>
+      <div className="w-full h-full flex justify-between bg-[#EAEBF3] items-center py-4">
+        <ImageSlider />
       </div>
       <main className="w-full mx-auto">
         <div className="flex gap-5 mb-6">
@@ -60,7 +58,7 @@ export default function LessonPage() {
             />
             <Input
               placeholder="Search..."
-              className="rounded-full pl-5 focus-visible:outline-blue-500"
+              className="rounded-full pl-5 h-12 focus-visible:outline-blue-500"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -72,7 +70,7 @@ export default function LessonPage() {
               onValueChange={toggleViewMode}
             >
               <ToggleGroupItem
-                className="rounded-full bg-white"
+                className="rounded-full h-12 w-12 bg-white"
                 value={viewMode === "grid" ? "list" : "grid"}
               >
                 {viewMode === "grid" ? (
@@ -88,7 +86,7 @@ export default function LessonPage() {
         <div className="flex gap-2 mb-4 overflow-x-scroll no-scrollbar ">
           {categories.map((category) => (
             <Button
-              size="sm"
+              size="lg"
               className="rounded-full px-5"
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
@@ -140,7 +138,7 @@ export default function LessonPage() {
           open={selectedLesson !== null}
           onOpenChange={() => setSelectedLesson(null)}
         >
-          <DialogContent className="h-screen w-[100%]">
+          <DialogContent className="h-screen max-w-screen">
             {selectedLesson && (
               <>
                 <DialogTitle>

@@ -30,14 +30,14 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-none">
+    <div className="relative overflow-hidden rounded-none">
       <div className="cursor-pointer" onClick={nextSlide}>
         <AnimatePresence mode="wait">
           <motion.img
             key={slides[current]}
             src={slides[current]}
             alt={`Slide ${current + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-40 object-cover"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
@@ -46,7 +46,7 @@ export default function ImageSlider() {
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
