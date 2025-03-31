@@ -1,18 +1,19 @@
-export type Category = "ALL" | "WEB" | "MOBILE" | "ROBOTIC";
+// types.ts
+export type Category =
+  | "ALL"
+  | "Components"
+  | "Basic"
+  | "Arduino"
+  | "Micro:Bit"
+  | "Circuit Assemblies";
 
 export interface Lesson {
   id: string;
   title: string;
   thumbnail: string;
-  category: string;
-  data?: ComponentData[] | any;
+  category: Category;
+  data: ComponentData[];
 }
-// export interface ComponentSection {
-//   title: string;
-//   text: string;
-//   img?: string;
-//   link?: string[];
-// }
 
 export interface ComponentData {
   cover?: string;
@@ -24,6 +25,7 @@ export interface ComponentData {
   link?: LinkItem[];
   url?: string;
 }
+
 export interface LinkItem {
   url: string;
   titleyoutube?: string;

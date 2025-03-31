@@ -1,7 +1,7 @@
-//@ts-nocheck
+// page.tsx
 "use client";
 
-import { ComponentProps } from "@/app/types";
+import { Category, ComponentData, Lesson } from "@/app/types";
 import ImageSlider from "@/components/organisms/image-slider";
 import ComponentCard from "@/components/templete/lesson-details";
 import { Button } from "@/components/ui/button";
@@ -10,10 +10,9 @@ import { Input } from "@/components/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Grid, List, Search } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
-import { lessons } from "../../db.json";
+import { useEffect, useState } from "react";
 
-const categories = [
+const categories: Category[] = [
   "ALL",
   "Components",
   "Basic",
@@ -23,17 +22,28 @@ const categories = [
 ];
 
 export default function LessonPage() {
+  const [lessons, setLessons] = useState<Lesson[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const [selectedCategory, setSelectedCategory] = useState<Category>("ALL");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
-  // Type `selectedCourse` as an array of ComponentData or null
-  const [selectedLesson, setSelectedLesson] = useState<ComponentProps[] | null>(
+  const [selectedLesson, setSelectedLesson] = useState<ComponentData[] | null>(
     null
   );
 
   const toggleViewMode = () => {
     setViewMode((prevMode) => (prevMode === "grid" ? "list" : "grid"));
   };
+
+  useEffect(() => {
+    fetch("/db.json")
+      .then((res) => res.json())
+      .then((data: { lessons: Lesson[] }) => {
+        setLessons(data.lessons || []);
+      })
+      .catch((error) => {
+        console.error("Error fetching lessons:", error);
+      });
+  }, []);
 
   const filteredLessons = lessons.filter((lesson) => {
     const matchesSearch = lesson.title
@@ -83,7 +93,7 @@ export default function LessonPage() {
           </div>
         </div>
 
-        <div className="flex gap-2 mb-4 overflow-x-scroll no-scrollbar ">
+        <div className="flex gap-2 mb-4 overflow-x-scroll no-scrollbar">
           {categories.map((category) => (
             <Button
               size="lg"
@@ -98,7 +108,7 @@ export default function LessonPage() {
         </div>
 
         <div
-          className={`grid gap-3 py-2  ${
+          className={`grid gap-3 py-2 ${
             viewMode === "grid"
               ? "grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
               : "grid-cols-1"
@@ -107,25 +117,25 @@ export default function LessonPage() {
           {filteredLessons.map((lesson) => (
             <div
               key={lesson.id}
-              className={`group cursor-pointer bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow  ${
+              className={`group cursor-pointer bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow ${
                 viewMode === "grid"
-                  ? " flex-col items-center"
+                  ? "flex flex-col items-center"
                   : "flex items-center gap-2 p-2"
               }`}
-              onClick={() => setSelectedLesson(lesson.data || null)} // Pass the array or null
+              onClick={() => setSelectedLesson(lesson.data)}
             >
               <Image
                 width={viewMode === "list" ? 48 : 160}
                 height={viewMode === "list" ? 48 : 160}
-                src={lesson?.thumbnail}
-                alt={lesson?.title}
+                src={lesson.thumbnail}
+                alt={lesson.title}
                 className={`object-contain ${
                   viewMode === "grid" ? "m-auto" : ""
                 }`}
               />
               <h3
-                className={`text-md font-semibold text-center ${
-                  viewMode === "grid" ? "py-2" : ""
+                className={`text-md font-semibold ${
+                  viewMode === "grid" ? "py-2 text-center" : ""
                 }`}
               >
                 {lesson.title}
@@ -136,7 +146,7 @@ export default function LessonPage() {
 
         <Dialog
           open={selectedLesson !== null}
-          onOpenChange={() => setSelectedLesson(null)}
+          onOpenChange={(open) => !open && setSelectedLesson(null)}
         >
           <DialogContent className="h-screen max-w-screen">
             {selectedLesson && (
