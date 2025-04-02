@@ -1,0 +1,1180 @@
+{
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Resistor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/resistor.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/resistor.png",
+          "title_cover": "Resistor"
+        },
+        {
+          "title": "description",
+          "text": "A resistor limits the flow of electrical current through a circuit.",
+          "img": "https://editor.tinkercad.com/components/detail/16511/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "A resistor uses up some of a circuit's current and converts it into heat. It does this by giving the electricity a longer, thinner, and slightly less conductive path to travel. Resistors are used in all kinds of circuits, from helping LEDs keep from burning out, to adjusting the frequency of a radio signals.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A resistor has two wire leads, and should be connected in series with the device it's meant to support. Resistors are not polarized, which means you can connect them either way around and they will work the same.",
+          "img": "https://editor.tinkercad.com/components/detail/16511/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name and resistance.",
+          "video": "https://editor.tinkercad.com/components/detail/16511/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicResistor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": [
+            {
+              "url": "https://www.youtube.com/watch?v=Gc1wVdbVI0E",
+              "titleyoutube": "Resistors Explained"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=yF7ADcRt_uA",
+              "titleyoutube": "How Resistors Work in Circuits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Capacitor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/capacitor.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/capacitor.png",
+          "title_cover": "Capacitor"
+        },
+        {
+          "title": "description",
+          "text": "This device temporarily stores electrical energy. Ceramic “caps” are usually used for small capacitance values.",
+          "img": "https://editor.tinkercad.com/components/detail/17910/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "A capacitor stores electrical energy by collecting charged particles on two conductive plates separated by a nonconductive material, in this case ceramic.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A capacitor has two wire leads, and can be connected in parallel or series with the device it's meant to support, depending on the application. Ceramic capacitors are not polarized, which means you can connect them either way around, and they will work the same.",
+          "img": "https://editor.tinkercad.com/components/detail/17910/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name and capacitance.",
+          "video": "https://editor.tinkercad.com/components/detail/17910/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicCeramicCapacitor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Polarized Capacitor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/capacitorPolarized.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/capacitorPolarized.png",
+          "title_cover": "Polarized Capacitor"
+        },
+        {
+          "title": "description",
+          "text": "This device temporarily stores electrical energy. Electrolytic “caps” are usually used for large capacitance values.",
+          "img": "https://editor.tinkercad.com/components/detail/17911/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "A capacitor stores electrical energy by collecting charged particles on two conductive plates separated by a nonconductive material, in this case an electrolyte and metal oxide.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A capacitor has two wire leads, and can be connected in parallel or series with the device it's meant to support, depending on the application. An electrolytic capacitor is polarized, which means it has a positive and negative side that must be connected correctly for it to work.",
+          "img": "https://editor.tinkercad.com/components/detail/17911/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name and capacitance.",
+          "video": "https://editor.tinkercad.com/components/detail/17911/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicPolarizedCapacitor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Diode",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/diode.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/capacitorPolarized.png",
+          "title_cover": "Diode"
+        },
+        {
+          "title": "description",
+          "text": "A diode is like a one-way valve, allowing current to flow in one direction through a circuit, but not the other.",
+          "img": "https://editor.tinkercad.com/components/detail/17914/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device contains semiconductor material that conducts electricity in one direction, but almost completely blocks flow in the opposite direction.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A diode has two wire leads, and can be connected in parallel or series with the device it's meant to support, depending on the application. Diodes are polarized, which means they each have a positive and negative pole that must be connected in a certain way.",
+          "img": "https://editor.tinkercad.com/components/detail/17914/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name.",
+          "video": "https://editor.tinkercad.com/components/detail/17914/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicDiode.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Zener Diode",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/diodeZener.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/diodeZener.png",
+          "title_cover": "Zener Diode"
+        },
+        {
+          "title": "description",
+          "text": "AA zener diode allows current to flow backwards through it if a certain voltage is reached.",
+          "img": "https://editor.tinkercad.com/components/detail/28708/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device contains semiconductor material that conducts electricity in one direction, but almost completely blocks flow in the opposite direction, unless a certain voltage is exceeded.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A zener diode has two wire leads, and should be connected in series with the device it's meant to support. Diodes are polarized, which means they each have a positive and negative pole that must be connected in a certain way.",
+          "img": "https://editor.tinkercad.com/components/detail/28708/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name and zener voltage.",
+          "video": "https://editor.tinkercad.com/components/detail/28708/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicZenerDiode.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Inductor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/inductor.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/inductor.png",
+          "title_cover": "Inductor"
+        },
+        {
+          "title": "description",
+          "text": "An inductor is a coil of wire that opposes changes in electrical current.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "This device stores energy in a magnetic field when electricity is applied. That magnetic field resists changes to the current flow through the inductor.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "An inductor has two wire leads, and should be connected in series with the device it's meant to support.",
+          "img": "https://editor.tinkercad.com/components/detail/17913/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name and inductance.",
+          "video": "https://editor.tinkercad.com/components/detail/17913/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicInductor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Pushbutton",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/pushButton.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/pushButton.png",
+          "title_cover": "Pushbutton"
+        },
+        {
+          "title": "description",
+          "text": "This device is a momentary switch.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "A pushbutton contains metal contacts that are squished together when the button is pressed, allowing electrical current to flow. This pushbutton has four wire leads, two sets of which are internally connected always, and the two sets touch when the button is pressed.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "Wire one side of the switch to power, and the other side to a microcontroller input pin, as well as to ground through a large resistor. The resistor holds the pin LOW unless the button is pressed, at which point the pin can detect a HIGH signal as it connects to 5V.",
+          "img": "https://editor.tinkercad.com/components/detail/34360/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Click the device during simulation to simulate pressing the switch. Press Shift and click the device to simulate holding the switch down.",
+          "video": "https://editor.tinkercad.com/components/detail/34360/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoButton.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Potentiometer",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/potentiometer.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/potentiometer.png",
+          "title_cover": "Potentiometer"
+        },
+        {
+          "title": "description",
+          "text": "This device is a variable resistor controlled by a knob.",
+          "img": "https://editor.tinkercad.com/components/detail/14416/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "A potentiometer works by changing the position of a movable contact on a resistive material in relation to a stationary contact, resulting in a changing resistance as the contact is moved.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has three wire leads attached to it. Connect the outer pins each to power and Ground, and the Signal pin is connected to a device directly, or any digital or analog terminal on an Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/14416/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Click the device during simulation to highlight it, then click and drag the wiper to change the simulated resistance.",
+          "video": "https://editor.tinkercad.com/components/detail/14416/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDDimmer.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Slideswitch",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/slideSwitch.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/slideSwitch.png",
+          "title_cover": "Slideswitch"
+        },
+        {
+          "title": "description",
+          "text": "This device is a toggle switch with two positions.",
+          "img": "https://editor.tinkercad.com/components/detail/17919/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "A toggle switch contains metal contacts that electrically join when the slider is moved, allowing electrical current to flow.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has three wire leads. Connect the Common pin in the middle to your device. Power and Ground are connected to Terminals 1 and 2; the order determines which direction is ON and which is OFF.",
+          "img": "https://editor.tinkercad.com/components/detail/17919/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Click the device during simulation to change the switch position.",
+          "video": "https://editor.tinkercad.com/components/detail/17919/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDSwitch.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Photoresistor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/photoResistor.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/photoResistor.png",
+          "title_cover": "Photoresistor"
+        },
+        {
+          "title": "description",
+          "text": "This device is a variable resistor that reacts to light.",
+          "img": "https://editor.tinkercad.com/components/detail/28712/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "When light energy contacts the sensor, the material absorbs some of the light energy and converts it to electrical energy, becoming less resistive.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "A resistor has two wire leads, and should be connected in series with the device it's meant to control. Photoresistors are not polarized, which means you can connect them either way around.",
+          "img": "https://editor.tinkercad.com/components/detail/28712/ground.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a slider representing light level. Slide the target to change the simulated light level.",
+          "video": "https://editor.tinkercad.com/components/detail/28712/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicDCMotor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Photodiode",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/photoDiode.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/photoDiode.png",
+          "title_cover": "Photodiode"
+        },
+        {
+          "title": "description",
+          "text": "A photodiode allows current to flow backward through it proportional to the light it absorbs.",
+          "img": "https://editor.tinkercad.com/components/detail/28712/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device works like a reverse LED - when the junction of its materials is exposed to light, then electric current or voltage is generated, depending on how it is connected.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has two wire leads and is polarized. It is often connected backward (reverse biased) to read a change in current via a microcontroller's analog input.",
+          "img": "https://editor.tinkercad.com/components/detail/28734/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a slider representing light level. Slide the target to change the simulated light level.",
+          "video": "https://editor.tinkercad.com/components/detail/28734/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoPhotodiode.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Ambient Light Sensor [Phototransistor]",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/photoTransistor.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/photoTransistor.png",
+          "title_cover": "Ambient Light Sensor [Phototransistor]"
+        },
+        {
+          "title": "description",
+          "text": "An ambient light sensor, or phototransistor, senses changes in light intensity. The flow of electrical current between the emitter and collector varies based on the amount of light received.",
+          "img": "https://editor.tinkercad.com/components/detail/28712/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device is an NPN transistor where the base connection is replaced by an optical source. The base current from the photons is amplified by the transistor's gain.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device is an NPN transistor where the base connection is replaced by an optical source. The base current from the photons is amplified by the transistor's gain.",
+          "img": "https://editor.tinkercad.com/components/detail/33961/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a slider representing light level. Slide the target to change the simulated light level.",
+          "video": "https://editor.tinkercad.com/components/detail/33961/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicPhototransistor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Flex Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorFlex.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorFlex.png",
+          "title_cover": "Flex Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device is a variable resistor that reacts to bending.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "The semi-conductive material on this flexible sensor becomes more conductive when it is squeezed together as the sensor flexes.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has two wire leads, and is often connected to the analog input of a microcontroller. Flex sensors are not polarized, which means they can be connected either way around.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorFlexid/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation and drag it up and down to change its flexing angle.",
+          "video": "https://editor.tinkercad.com/components/detail/sensorFlexid/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoFlexSensor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Force Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorForce.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorForce.png",
+          "title_cover": "Force Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device is a variable resistor that reacts to pressing.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorForceid/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "The semi-conductive material inside this sensor becomes more conductive when it is squeezed together.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "The semi-conductive material inside this sensor becomes more conductive when it is squeezed together.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorForceid/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation and to display a slider representing pressing force. Drag the slider up and down to change the amount of force.",
+          "video": "https://editor.tinkercad.com/components/detail/sensorForceid/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoForceSensor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "IR sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorInfrared.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorInfrared.png",
+          "title_cover": "IR sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device detects patterns of infrared light created by a remote control or wireless communication.",
+          "img": "https://editor.tinkercad.com/components/detail/45398/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "Used with an IR remote, an IR sensor detects patterns of light for wireless communication.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has three wire leads, and is often connected to the digital input of a microcontroller. Power the device by connecting the Power pin to the 5V and GND to ground. The Out pin is connected to a digital input on an Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/45398/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device to edit its name. It will receive the signal from any IR Remote in your circuit.",
+          "video": "https://editor.tinkercad.com/components/detail/45398/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Ultrasonic Distance Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance.png",
+          "title_cover": "Ultrasonic Distance Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This sensor uses sound waves to determine how far away an object is from it.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "This device emits sound with a very high pitch. So high, in fact that you cannot hear it. Sound takes time to travel through the air. This clever device listens for the first echo to bounce off a nearby object. It then figures out how far away the object is by measuring the time it takes for the sound to reflect off the target and echo back to it.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/howItWorks.gif"
+        },
+        {
+          "title": "Connect it",
+          "text": "There are three pins on the bottom of this device. Power the device by connecting the Power pin to the Arduino 5V terminal and Ground to any GND terminal on an Arduino. The Signal pin is connected to any digital or analog terminal on the Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect a large object. The circle is the target object. Select the target to move it around the region and change the distance between it and the sensor.",
+          "img": "https://editor.tinkercad.com/components/detail/50340/howToUseIt.gif"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoUltrasonicRangeFinder.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Ultrasonic Distance Sensor (4-pin)",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance4Pin.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorUltrasonicDistance4Pin.png",
+          "title_cover": "Ultrasonic Distance Sensor (4-pin)"
+        },
+        {
+          "title": "description",
+          "text": "This sensor uses sound waves to determine how far away an object is from it.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "This device emits sound with a very high pitch. So high, in fact that you cannot hear it. Sound takes time to travel through the air. This clever device listens for the first echo to bounce off a nearby object. It then figures out how far away the object is by measuring the time it takes for the sound to reflect off the target and echo back to it.",
+          "img": "https://editor.tinkercad.com/components/detail/50341/howItWorks.gif"
+        },
+        {
+          "title": "Connect it",
+          "text": "There are four pins on the bottom of this device. Power the device by connecting the Power pin to the Arduino 5V terminal and Ground to any GND terminal on an Arduino. The Trigger and Echo pins are connected to any digital or analog terminals on the Arduino. The code tells the sensor to emit its sound using the trigger pin, and waits for the echo detection from the echo pin. It converts the time it took it to a number representing the distance in inches or centimeters.",
+          "img": "https://editor.tinkercad.com/components/detail/50341/echo.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect a large object. The circle is the target object. Select the target to move it around the region and change the distance between it and the sensor.",
+          "video": "https://editor.tinkercad.com/components/detail/50341/howToUseIt.mp4"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "PIR Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorPassiveInfrared.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorPassiveInfrared.png",
+          "title_cover": "PIR Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device detects changes in infrared light levels over a wide area, such as movement in a room.",
+          "img": "https://editor.tinkercad.com/components/detail/52579/component.png"
+        },
+        {
+          "title": "how it work",
+          "text": "Passive Infrared (PIR) sensors detect heat energy by comparing the signals from a pair of pyroelectric elements. The supporting circuitry then sends a HIGH signal to its signal wire.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "There are three pins at the bottom of the device. Power the device by connecting the Power pin to the 5V and Ground to ground. The Signal pin is connected to a device directly, or any digital or analog terminal on an Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/52579/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Select the device during simulation to show a region with a circle in it. The region represents the space in which the sensor can detect movement. The circle is the target object. Select the target to move it around the region and activate the sensor.",
+          "video": "https://editor.tinkercad.com/components/detail/52579/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterBasicPIRSensor.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Soil Moisture Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/sensorSoilMoisture.png",
+      "category": "Components",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/sensorSoilMoisture.png",
+          "title_cover": "Soil Moisture Sensor"
+        },
+        {
+          "title": "description",
+          "text": "This device detects the amount of moisture present in soil.",
+          "img": ""
+        },
+        {
+          "title": "how it work",
+          "text": "This soil moisture sensor measures the resistance between the two probes stuck into soil, which will decrease when more moisture is present.",
+          "img": ""
+        },
+        {
+          "title": "Connect it",
+          "text": "This device has three connection pads labeled VCC, GND, and SIG. Power the device by connecting the VCC pin to the Arduino 5V terminal (or any analog or digital terminal set to HIGH) and Ground (GND) to any GND terminal on an Arduino. The Signal pin is connected to any analog input on the Arduino.",
+          "img": "https://editor.tinkercad.com/components/detail/sensorSoilMoistureid/signal.png"
+        },
+        {
+          "title": "How it is used",
+          "text": "Click the device during simulation to highlight it, then click and drag the wiper to change the simulated resistance.",
+          "video": "https://editor.tinkercad.com/components/detail/sensorSoilMoistureid/howToUseIt.mp4"
+        },
+        {
+          "title": "Get started",
+          "text": "Drag the starter circuit below into your design for a working example of how to use this part.",
+          "img": "https://editor.tinkercad.com/components/thumbnails/starterArduinoMoisture.png"
+        },
+        {
+          "title": "More information",
+          "text": "Additional information about resistors and how they are used can be found on these pages:",
+          "link": []
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "LED Light Up",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDLightUp.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDLightUp.png",
+          "title_cover": "LED Light Up"
+        },
+        {
+          "title": "description",
+          "text": "Light up an LED with just a battery and a resistor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "LED Dimmer",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDDimmer.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDDimmer.png",
+          "title_cover": "LED Dimmer"
+        },
+        {
+          "title": "description",
+          "text": "Fade your LED on and off with a battery and a potentiometer.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "LED Switch",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDSwitch.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicLEDSwitch.png",
+          "title_cover": "LED Switch"
+        },
+        {
+          "title": "description",
+          "text": "Turn your LED on and off with a simple switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Multiple LEDs",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicMultipleLEDs.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicMultipleLEDs.png",
+          "title_cover": "Multiple LEDs"
+        },
+        {
+          "title": "description",
+          "text": "Light up multiple LEDs by connecting them in parallel.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "RGB LED",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicRGBLED.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicRGBLED.png",
+          "title_cover": "RGB LED"
+        },
+        {
+          "title": "description",
+          "text": "Mix colors with an RGB LED.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "DC Motor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicDCMotor.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicDCMotor.png",
+          "title_cover": "DC Motor"
+        },
+        {
+          "title": "description",
+          "text": "Control a DC motor with light using a photoresistor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Temperature Sensor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicTemperatureSensor.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicTemperatureSensor.png",
+          "title_cover": "Temperature Sensor"
+        },
+        {
+          "title": "description",
+          "text": "Measure ambient temperature using a temperature sensor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "NPN transistor",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterBasicNPN.png",
+      "category": "Basic",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterBasicNPN.png",
+          "title_cover": "NPN transistor"
+        },
+        {
+          "title": "description",
+          "text": "Use a transistor as a switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Breadboard",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoBreadboard.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoBreadboard.png",
+          "title_cover": "Breadboard"
+        },
+        {
+          "title": "description",
+          "text": "UArduino and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Button",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoButton.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoButton.png",
+          "title_cover": "Button"
+        },
+        {
+          "title": "description",
+          "text": "Detect input using a button.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Debounce",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoDebounce.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoDebounce.png",
+          "title_cover": "Debounce"
+        },
+        {
+          "title": "description",
+          "text": "Debounce an input like a button press to more accurately detect a state change.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Infrared Receiver",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInfraredReceiver.png",
+          "title_cover": "Infrared Receiver"
+        },
+        {
+          "title": "description",
+          "text": "Receive and decode infrared remote signals.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Voltage Meter",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoVoltageMeter.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoVoltageMeter.png",
+          "title_cover": "Voltage Meter"
+        },
+        {
+          "title": "description",
+          "text": "Measure a voltage and display it on an LED display.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Input Serial Pullup",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInternalSerialPullup.png",
+      "category": "Arduino",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterArduinoInternalSerialPullup.png",
+          "title_cover": "Input Serial Pullup"
+        },
+        {
+          "title": "description",
+          "text": "Use an internal resistor on an input pin and print the results to the serial monitor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Breadboard",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreadboard.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreadboard.png",
+          "title_cover": "Breadboard"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Alarm",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAlarm.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAlarm.png",
+          "title_cover": "Alarm"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit, PIR sensor, and piezo buzzer alarm.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Analog",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAnalog.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitAnalog.png",
+          "title_cover": "Analog"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit analog input/output example.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "title": "micro:bit breakout",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreakout.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitBreakout.png",
+          "title_cover": "micro:bit breakout"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit and a breadboard.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Servo",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitServo.png",
+      "category": "Micro:Bit",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterMicrobitServo.png",
+          "title_cover": "Servo"
+        },
+        {
+          "title": "description",
+          "text": "micro:bit thermometer using a servo motor.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "title": "Glow Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyGlow.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyGlow.png",
+          "title_cover": "Glow Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Create a simple glowing design with an LED and battery.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Move Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyMove.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblyMove.png",
+          "title_cover": "Move Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Build a design that moves with a vibration motor and switch.",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "title": "Spin Circuit Assembly",
+      "thumbnail": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblySpin.png",
+      "category": "Circuit Assemblies",
+      "data": [
+        {
+          "cover": "https://editor.tinkercad.com/components/thumbnails/starterCircuitAssemblySpin.png",
+          "title_cover": "Spin Circuit Assembly"
+        },
+        {
+          "title": "description",
+          "text": "Create a spinning design with a hobby gearmotor and battery box.",
+          "img": ""
+        }
+      ]
+    }
+  ]
+}
