@@ -10,8 +10,6 @@ This is a Next.js application that has been integrated with Capacitor to support
   - [Install Dependencies](#install-dependencies)
   - [Run the Next.js Web App](#run-the-nextjs-web-app)
   - [Run the Mobile App](#run-the-mobile-app)
-- [Mobile App Setup](#mobile-app-setup)
-  - [Android Setup](#android-setup)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
@@ -59,8 +57,6 @@ npm run dev
 This will start the development server at http://localhost:3000
 
 ### Run the Mobile App
-
-1. Install Mobile Dependencies
 
 Before running the mobile app, make sure you have build next app
 
