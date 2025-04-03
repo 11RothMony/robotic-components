@@ -1,40 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ROBOTIC LEARNING APP
 
-## Getting Started
+This is a Next.js application that has been integrated with Capacitor to support mobile platforms (Android). Follow the instructions below to clone, set up, and run the app on both your local machine and mobile device.
 
-First, run the development server:
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Clone the Project](#clone-the-project)
+- [Setting Up for Development](#setting-up-for-development)
+  - [Install Dependencies](#install-dependencies)
+  - [Run the Next.js Web App](#run-the-nextjs-web-app)
+  - [Run the Mobile App](#run-the-mobile-app)
+- [Mobile App Setup](#mobile-app-setup)
+  - [Android Setup](#android-setup)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+
+---
+
+## Requirements
+
+Before setting up the project, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 20.x or later)
+- [npm](https://www.npmjs.com/) for managing dependencies
+- [Git](https://git-scm.com/) for version control
+- [Capacitor CLI](https://capacitorjs.com/docs/getting-started) (for mobile app setup)
+- [Android Studio](https://developer.android.com/studio) (for Android app development)
+
+---
+
+## Clone the Project
+
+To get started, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/11RothMony/robotic-components.git
+cd robotic-components
+```
+
+## Setting Up for Development
+
+### Install Dependencies
+
+Run the following command to install all dependencies:
+
+```bash
+npm install
+```
+
+### Run the Next.js Web App
+
+To start the Next.js web application, run the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server at http://localhost:3000
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Run the Mobile App
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Install Mobile Dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Before running the mobile app, make sure you have build next app
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+After run build, sync your build code to android
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx cap sync android
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+To run the app on an Android emulator or connected device, use:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npx cap open android
+```
 
-## Deploy on Vercel
+This will open the Android project in Android Studio. From there, you can build and run the app on an emulator or connected device.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Troubleshooting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+If you encounter any issues with dependencies, try deleting node_modules and running npm install again
+
+For Android build issues, ensure your Android Studio environment is properly configured
+
+Make sure to run npx cap sync after making changes to the web app
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

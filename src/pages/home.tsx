@@ -42,8 +42,8 @@ export default function HomePage() {
   });
 
   return (
-    <div className="min-h-screen px-2 mx-auto bg-[#EAEBF3]">
-      <div className="w-full h-full flex justify-between bg-[#EAEBF3] items-center py-4">
+    <div className="max-w-5xl min-h-screen px-2 mx-auto">
+      <div className="w-full h-full flex justify-between items-center py-4">
         <ImageSlider />
       </div>
       <main className="w-full mx-auto">
