@@ -58,22 +58,10 @@ This will start the development server at http://localhost:3000
 
 ### Run the Mobile App
 
-Before running the mobile app, make sure you have build next app
+To run the mobile app, you just run the follwing command:
 
 ```bash
-npm run build
-```
-
-After run build, sync your build code to android
-
-```bash
-npx cap sync android
-```
-
-To run the app on an Android emulator or connected device, use:
-
-```bash
-npx cap open android
+npm run open:android
 ```
 
 This will open the Android project in Android Studio. From there, you can build and run the app on an emulator or connected device.
